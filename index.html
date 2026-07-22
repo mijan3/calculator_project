@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main class="calculator-container">
+      <section class="calculator" aria-label="Calculator">
+        <!-- Calculator content will go here -->
+        <div class="calculator-header">
+          <h1>Calculator</h1>
+          <p>A simple calculator built with HTML, CSS, and JavaScript</p>
+        </div>
+        <div class="display" aria-live="polite">
+          <div class="previous-operation" id="previousOperation"></div>
+          <div class="current-operation" id="currentOperation">0</div>
+        </div>
+        <div class="calculator-buttons">
+          <!-- Calculator buttons will go here -->
+          <button type="button" class="button button-clear" data-action="clear">
+            AC
+          </button>
+          <button
+            type="button"
+            class="button button-special"
+            data-action="delete"
+            aria-label="Delete last digit"
+          >
+            DEL
+          </button>
+          <button
+            type="button"
+            class="button button-special"
+            data-action="percentage"
+          >
+            %
+          </button>
+          <button
+            type="button"
+            class="button button-operator"
+            data-operator="/"
+            aria-label="Divide"
+          >
+            ÷
+          </button>
+          <button type="button" class="button" data-number="7">7</button>
+          <button type="button" class="button" data-number="8">8</button>
+          <button type="button" class="button" data-number="9">9</button>
+          <button
+            type="button"
+            class="button button-operator"
+            data-operator="*"
+            aria-label="Multiply"
+          >
+            ×
+          </button>
+          <button type="button" class="button" data-number="4">4</button>
+
+          <button type="button" class="button" data-number="5">5</button>
+
+          <button type="button" class="button" data-number="6">6</button>
+          <button
+            type="button"
+            class="button button-operator"
+            data-operator="-"
+            aria-label="Subtract"
+          >
+            -
+          </button>
+          <button type="button" class="button" data-number="1">1</button>
+
+          <button type="button" class="button" data-number="2">2</button>
+
+          <button type="button" class="button" data-number="3">3</button>
+          <button
+            type="button"
+            class="button button-operator"
+            data-operator="+"
+            aria-label="Add"
+          >
+            +
+          </button>
+          <button
+            type="button"
+            class="button button-special"
+            data-action="toggle-sign"
+            aria-label="Toggle positive or negative"
+          >
+            +/−
+          </button>
+          <button type="button" class="button" data-number="0">0</button>
+          <button
+            type="button"
+            class="button"
+            data-action="decimal"
+            aria-label="Decimal point"
+          >
+            .
+          </button>
+
+          <button
+            type="button"
+            class="button button-equals"
+            data-action="calculate"
+            aria-label="Calculate result"
+          >
+            =
+          </button>
+        </div>
+        <p class="keyboard-help">
+          Keyboard supported: numbers, operators, Enter, Backspace and Escape
+        </p>
+      </section>
+    </main>
+
+    <script src="javascript/script.js"></script>
+  </body>
+</html>
