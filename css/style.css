@@ -179,9 +179,75 @@ body {
 /*Keyborad Help*/
 
 .keyboard-help {
-    margin-top: 18px;
-    color: #64748b;
-    font-size: 0.72rem;
-    line-height: 1.5;
-    text-align: center;
+  margin-top: 18px;
+  color: #64748b;
+  font-size: 0.72rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+/* Mobile Responsiveness */
+
+@media (max-width: 480px) {
+  .calculator-container {
+    padding: 12px;
+  }
+
+  .calculator {
+    border-radius: 20px;
+  }
+
+  .display {
+    min-height: 100px;
+    padding: 12px;
+  }
+  .keyboard-help {
+    display: none;
+  }
+}
+
+/* Very Small Screens */
+@media (max-width: 320px) {
+  .calculator {
+    padding: 14px;
+  }
+
+  .calculator-buttons {
+    gap: 7px;
+  }
+
+  .button {
+    border-radius: 11px;
+  }
+}
+
+/*Landscape Mobile*/
+@media (max-height: 600px) and (orientation: landscape) {
+    .calculator-container {
+        align-items: flex-start;
+        padding-top: 15px;
+    }
+
+    .calculator {
+        max-width: 340px;
+    }
+
+    .calculator-header,
+    .keyboard-help {
+        display: none;
+    }
+
+    .display {
+        min-height: 85px;
+        margin-bottom: 12px;
+    }
+
+    .calculator-buttons {
+        gap: 8px;
+    }
+
+    .button {
+        aspect-ratio: auto;
+        min-height: 48px;
+    }
 }
